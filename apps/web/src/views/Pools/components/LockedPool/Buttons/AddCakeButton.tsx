@@ -54,7 +54,7 @@ const AddCakeButton: React.FC<React.PropsWithChildren<AddButtonPropsType>> = ({
       style={{ whiteSpace: 'nowrap', paddingLeft: 0, paddingRight: 0 }}
       {...props}
     >
-      {t('Add CAKE')}
+      {t('Add BASE')}
     </Button>
   ) : (
     <Skeleton height={48} />

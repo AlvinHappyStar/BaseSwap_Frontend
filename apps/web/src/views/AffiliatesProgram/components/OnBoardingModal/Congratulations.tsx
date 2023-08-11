@@ -21,7 +21,7 @@ const Congratulations = () => {
   return (
     <>
       <ModalV2 style={{ zIndex: 100 }} isOpen={isOpen} onDismiss={() => setIsOpen(false)}>
-        <USCitizenConfirmModal title={t('PancakeSwap Affiliate Program')} id={IdType.AFFILIATE_PROGRAM} />
+        <USCitizenConfirmModal title={t('BaseSwap Affiliate Program')} id={IdType.AFFILIATE_PROGRAM} />
       </ModalV2>
       <Flex flexDirection="column" padding={['24px', '24px', '24px', '24px', '80px 24px']}>
         <Text lineHeight="110%" maxWidth="190px" fontSize={['24px']} bold m="12px 0">

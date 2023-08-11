@@ -35,7 +35,7 @@ const stepsConfigBuilder = ({ t, userInfos, eventInfos, userStatus, account, the
         eventStatus: [SaleStatusEnum.Pending, SaleStatusEnum.Premint],
       }),
       title: t('Activate your profile'),
-      bodyText: [t('You’ll need an active PancakeSwap Profile to buy Minting Tickets and mint a Pancake Squad NFT!')],
+      bodyText: [t('You’ll need an active BaseSwap Profile to buy Minting Tickets and mint a Pancake Squad NFT!')],
       buttons: (
         <>
           <ActivateProfileButton userStatus={userStatus} t={t} />
@@ -50,8 +50,8 @@ const stepsConfigBuilder = ({ t, userInfos, eventInfos, userStatus, account, the
         hasProfileActivated,
         eventStatus: [SaleStatusEnum.Pending, SaleStatusEnum.Premint],
       }),
-      title: t('Hold CAKE'),
-      bodyText: [t('Each NFT costs CAKE to mint. Remember you also need BNB to cover transaction fees too!')],
+      title: t('Hold BASE'),
+      bodyText: [t('Each NFT costs BASE to mint. Remember you also need BNB to cover transaction fees too!')],
       buttons: (
         <>
           <Button
@@ -60,7 +60,7 @@ const stepsConfigBuilder = ({ t, userInfos, eventInfos, userStatus, account, the
             target="_blank"
             width="100%"
           >
-            {t('Buy CAKE')}
+            {t('Buy BASE')}
           </Button>
         </>
       ),

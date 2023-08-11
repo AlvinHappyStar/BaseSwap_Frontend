@@ -106,7 +106,7 @@ const QualifiedPreview: React.FC<React.PropsWithChildren<QualifiedPreviewProps>>
           {t('Your Current trading rewards')}
         </Text>
         <Text bold fontSize="40px">{`$${formatNumber(rewardInUSD)}`}</Text>
-        <Text fontSize="14px" color="textSubtle">{`~${formatNumber(rewardInCake)} CAKE`}</Text>
+        <Text fontSize="14px" color="textSubtle">{`~${formatNumber(rewardInCake)} BASE`}</Text>
         <Text fontSize="12px" color="textSubtle" mt="4px">
           {t('Available for claiming')}
           {timeRemaining > 0 ? (
@@ -145,7 +145,7 @@ const QualifiedPreview: React.FC<React.PropsWithChildren<QualifiedPreviewProps>>
                 {t('can not be claim due to the max reward cap.')}
               </Text>
               <Text as="span" bold>
-                {t('Lock more CAKE to keep earning.')}
+                {t('Lock more BASE to keep earning.')}
               </Text>
             </MessageText>
           </Message>
@@ -158,13 +158,13 @@ const QualifiedPreview: React.FC<React.PropsWithChildren<QualifiedPreviewProps>>
             {t('Your Current Max Reward Cap')}
           </Text>
           <Text bold color="failure" fontSize="24px">{`$${formatNumber(maxRewardCap)}`}</Text>
-          <Text color="failure" fontSize="14px">{`~${formatNumber(maxRewardCapCakePrice)} CAKE`}</Text>
+          <Text color="failure" fontSize="14px">{`~${formatNumber(maxRewardCapCakePrice)} BASE`}</Text>
           <Text width="100%" lineHeight="120%">
             <Text color="textSubtle" fontSize="14px" lineHeight="120%" as="span">
-              {t('Equals to your %amount%% of locked CAKE divided by', { amount: maxRewardCapInfoAmount })}
+              {t('Equals to your %amount%% of locked BASE divided by', { amount: maxRewardCapInfoAmount })}
             </Text>
             <Text color="textSubtle" fontSize="14px" lineHeight="120%" as="span" ml="4px">
-              {t('of the amount of your locked CAKE. Lock more CAKE to raise this limit')}
+              {t('of the amount of your locked BASE. Lock more BASE to raise this limit')}
             </Text>
           </Text>
           {additionalAmount >= 0.01 && (

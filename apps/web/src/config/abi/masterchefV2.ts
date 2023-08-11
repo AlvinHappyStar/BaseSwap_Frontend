@@ -141,7 +141,7 @@ export const masterChefV2ABI = [
   },
   {
     inputs: [],
-    name: 'CAKE',
+    name: 'BASE',
     outputs: [{ internalType: 'contract IBEP20', name: '', type: 'address' }],
     stateMutability: 'view',
     type: 'function',

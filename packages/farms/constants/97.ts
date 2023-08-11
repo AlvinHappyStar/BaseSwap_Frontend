@@ -55,21 +55,21 @@ const farms: SerializedFarmConfig[] = [
    */
   {
     pid: 0,
-    lpSymbol: 'CAKE',
+    lpSymbol: 'BASE',
     lpAddress: '0x36e3E4fF6471559b19F66bD10985534d5e214D44',
     token: bscTestnetTokens.syrup,
     quoteToken: bscTestnetTokens.wbnb,
   },
   {
     pid: 3,
-    lpSymbol: 'BUSD-CAKE LP',
+    lpSymbol: 'BUSD-BASE LP',
     lpAddress: '0xb98C30fA9f5e9cf6749B7021b4DDc0DBFe73b73e',
     token: bscTestnetTokens.busd,
     quoteToken: bscTestnetTokens.cake,
   },
   {
     pid: 4,
-    lpSymbol: 'CAKE-BNB LP',
+    lpSymbol: 'BASE-BNB LP',
     lpAddress: '0xa96818CA65B57bEc2155Ba5c81a70151f63300CD',
     token: bscTestnetTokens.cake,
     quoteToken: bscTestnetTokens.wbnb,

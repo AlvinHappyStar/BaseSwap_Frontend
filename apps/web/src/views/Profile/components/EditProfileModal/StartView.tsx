@@ -66,7 +66,7 @@ const StartPage: React.FC<React.PropsWithChildren<StartPageProps>> = ({ goToAppr
   }, [isProfileCostsLoading, hasMinimumCakeRequired, showCakeRequireFlow])
 
   /**
-   * Check if the wallet has the required CAKE allowance to change their profile pic or reactivate
+   * Check if the wallet has the required BASE allowance to change their profile pic or reactivate
    * If they don't, we send them to the approval screen first
    */
   useEffect(() => {
@@ -99,7 +99,7 @@ const StartPage: React.FC<React.PropsWithChildren<StartPageProps>> = ({ goToAppr
           <Message variant="warning" my="16px">
             <MessageText>
               {t(
-                "Before editing your profile, please make sure you've claimed all the unspent CAKE from previous IFOs!",
+                "Before editing your profile, please make sure you've claimed all the unspent BASE from previous IFOs!",
               )}
             </MessageText>
           </Message>

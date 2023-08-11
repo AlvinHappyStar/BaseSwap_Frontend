@@ -1,4 +1,4 @@
-import { CAKE } from '@pancakeswap/tokens'
+import { BASE } from '@pancakeswap/tokens'
 
 // Addresses
 import {
@@ -133,7 +133,7 @@ export const getPointCenterIfoContract = (signer?: WalletClient) => {
 export const getCakeContract = (chainId?: number) => {
   return getContract({
     abi: erc20ABI,
-    address: chainId ? CAKE[chainId]?.address : CAKE[ChainId.BSC].address,
+    address: chainId ? BASE[chainId]?.address : BASE[ChainId.BSC].address,
     chainId,
   })
 }

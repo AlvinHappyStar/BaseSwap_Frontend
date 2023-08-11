@@ -91,7 +91,7 @@ const EasterPrizesGrid = () => {
             <tr>
               <th>{t('Rank in team')}</th>
               <th>{t('Tier')}</th>
-              <th>{t('CAKE Prizes (Split)')}</th>
+              <th>{t('BASE Prizes (Split)')}</th>
               <th>{t('Achievements')}</th>
               <th>{t('NFT')}</th>
             </tr>

@@ -2,7 +2,7 @@ import BN from 'bignumber.js'
 import { formatUnits } from 'viem'
 import { SerializedFarmConfig, FarmWithPrices } from '@pancakeswap/farms'
 import { ChainId, CurrencyAmount, Pair } from '@pancakeswap/sdk'
-import { BUSD, CAKE } from '@pancakeswap/tokens'
+import { BUSD, BASE } from '@pancakeswap/tokens'
 import { farmFetcher } from './helper'
 import { FarmKV, FarmResult } from './kv'
 import { updateLPsAPR } from './lpApr'
@@ -63,13 +63,13 @@ const pairAbi = [
 
 const cakeBusdPairMap = {
   [ChainId.BSC]: {
-    address: Pair.getAddress(CAKE[ChainId.BSC], BUSD[ChainId.BSC]),
-    tokenA: CAKE[ChainId.BSC],
+    address: Pair.getAddress(BASE[ChainId.BSC], BUSD[ChainId.BSC]),
+    tokenA: BASE[ChainId.BSC],
     tokenB: BUSD[ChainId.BSC],
   },
   [ChainId.BSC_TESTNET]: {
-    address: Pair.getAddress(CAKE[ChainId.BSC_TESTNET], BUSD[ChainId.BSC_TESTNET]),
-    tokenA: CAKE[ChainId.BSC_TESTNET],
+    address: Pair.getAddress(BASE[ChainId.BSC_TESTNET], BUSD[ChainId.BSC_TESTNET]),
+    tokenA: BASE[ChainId.BSC_TESTNET],
     tokenB: BUSD[ChainId.BSC_TESTNET],
   },
 }

@@ -15,8 +15,8 @@ export const testnetTokens = {
     ChainId.TESTNET,
     '0xe0e5ad285cbcdb873b2ee15bb6bcac73d9d763bcb58395e894255eeecf3992cf::pancake::Cake',
     8,
-    'CAKE',
-    'PancakeSwap Token',
+    'BASE',
+    'BaseSwap Token',
     '',
   ),
   eth: new Coin(

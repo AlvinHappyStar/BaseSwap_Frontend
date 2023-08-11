@@ -6,29 +6,29 @@ const UsAgreement = () => {
   return (
     <AffiliatesProgramLayout>
       <Container>
-        <Text as="h1">PancakeSwap Affiliate Program Agreement</Text>
+        <Text as="h1">BaseSwap Affiliate Program Agreement</Text>
         <Text as="h3">Last modified: May 3, 2023</Text>
         <Text as="p">
-          This PancakeSwap Affiliate Program Agreement (“<strong>Agreement”</strong>) is a legal contract between you (“
-          <strong>Affiliate”</strong>) and PancakeSwap that applies to your participation in the PancakeSwap Affiliate
-          Program (“Program”). In this Agreement, “<strong>PancakeSwap</strong>,” “<strong>we</strong>” or “
-          <strong>us</strong>” means PancakeSwap. If you are participating or registering on behalf of a business, then
+          This BaseSwap Affiliate Program Agreement (“<strong>Agreement”</strong>) is a legal contract between you (“
+          <strong>Affiliate”</strong>) and BaseSwap that applies to your participation in the BaseSwap Affiliate
+          Program (“Program”). In this Agreement, “<strong>BaseSwap</strong>,” “<strong>we</strong>” or “
+          <strong>us</strong>” means BaseSwap. If you are participating or registering on behalf of a business, then
           the term “<strong>you</strong>” means such business, and you represent and warrant that you have authority to
           bind that business to this Agreement. By participating or registering to participate in the Program, or
           otherwise indicating your acceptance of this Agreement (such as by clicking a button or checking a box on a
-          web page), you agree to this Agreement which may be amended from time to time by PancakeSwap.
+          web page), you agree to this Agreement which may be amended from time to time by BaseSwap.
         </Text>
 
         <Text as="h3">1. Program Overview</Text>
         <Text as="p">
           1.1 The Program offers you the opportunity to get paid different commission rates, by means of inviting new
-          users (“<strong>Referrals”</strong>) to register and trade on PancakeSwap, in accordance with the terms of
+          users (“<strong>Referrals”</strong>) to register and trade on BaseSwap, in accordance with the terms of
           this Agreement.
         </Text>
         <Text as="p">
-          1.2 A Referral must be a new user and must not have interacted or signed with the PancakeSwap platform or used
-          any of PancakeSwap’s services (including but not limited to V2, V3 swapping services, perpetual trading,
-          Non-Fungible Tokens and related services, initial farm offerings and similar offerings) (“PancakeSwap
+          1.2 A Referral must be a new user and must not have interacted or signed with the BaseSwap platform or used
+          any of BaseSwap’s services (including but not limited to V2, V3 swapping services, perpetual trading,
+          Non-Fungible Tokens and related services, initial farm offerings and similar offerings) (“BaseSwap
           Services”).
         </Text>
 
@@ -38,7 +38,7 @@ const UsAgreement = () => {
           rates on the following fees:
         </Text>
         <Text as="p">
-          (a) <strong>3</strong>% on trading fees paid by your Referrals on PancakeSwap V2 and PancakeSwap V3, limited
+          (a) <strong>3</strong>% on trading fees paid by your Referrals on BaseSwap V2 and BaseSwap V3, limited
           to swap trades on the BNB Smart Chain and Ethereum chain only; and
         </Text>
         <Text as="p">
@@ -48,7 +48,7 @@ const UsAgreement = () => {
         <Text as="p">2.2 To be eligible for commissions, the swap trades must have:</Text>
         <Text as="p">(a) a token pair that:</Text>
         <Text as="p">
-          <Text as="span">(i) Is in the “PancakeSwap Extended” official token list</Text>
+          <Text as="span">(i) Is in the “BaseSwap Extended” official token list</Text>
           <Link
             m="0 4px"
             display="inline !important"
@@ -71,7 +71,7 @@ const UsAgreement = () => {
           referral link. We will not pay commissions if someone says they signed up through you but such a sign up was
           not done through the referral link.
         </Text>
-        <Text as="p">3.2 All commissions will be paid out in CAKE tokens.</Text>
+        <Text as="p">3.2 All commissions will be paid out in BASE tokens.</Text>
         <Text as="p">
           3.3 All commissions are calculated upon the completion of every on-chain transaction and denominated in U.S.
           dollars as follows. This means that:
@@ -84,12 +84,12 @@ const UsAgreement = () => {
         </Text>
         <Text as="p">
           (b) At or around the time that the commissions are paid out to you, using the USD value calculated at Clause
-          3.3(a) , we will calculate your commissions in CAKE tokens using the prevailing USD price of CAKE tokens at
+          3.3(a) , we will calculate your commissions in BASE tokens using the prevailing USD price of BASE tokens at
           that time.
         </Text>
         <Text as="p">3.4 In calculating your commissions, we reserve the right to determine the:</Text>
         <Text as="p">
-          (a) prevailing USD price of the Trading Fees Denomination and the CAKE tokens by reference to the spot price
+          (a) prevailing USD price of the Trading Fees Denomination and the BASE tokens by reference to the spot price
           on a centralised exchange, the exchange rate in a liquidity pool, or a data oracle in our sole discretion; and
         </Text>
         <Text as="p">(b) exact timing which the prevailing price is taken at.</Text>
@@ -201,7 +201,7 @@ const UsAgreement = () => {
           all applicable copyright, trademark, and other laws.
         </Text>
         <Text as="p">
-          7.3 Any statements you make about PancakeSwap must reflect your honest opinions, beliefs, or experiences and
+          7.3 Any statements you make about BaseSwap must reflect your honest opinions, beliefs, or experiences and
           must not be false, misleading, or unsupported.
         </Text>
         <Text as="p">7.4 There is no limit on the number of Referrals that you may invite.</Text>
@@ -213,7 +213,7 @@ const UsAgreement = () => {
         </Text>
 
         <Text as="h3">9. Affiliate’s Warranties</Text>
-        <Text as="p">You warrant, represent, and undertake to PancakeSwap that:</Text>
+        <Text as="p">You warrant, represent, and undertake to BaseSwap that:</Text>
         <Text as="p">(a) If you are contracting in your personal capacity, you are at least 18 years of age;</Text>
         <Text as="p">
           (b) You do not have any unspent criminal convictions of any kind, subsisting at the Effective Date of the
@@ -249,44 +249,44 @@ const UsAgreement = () => {
         <Text as="h3">11. Relationship of the Parties</Text>
         <Text as="p">
           You agree that this Agreement creates the relationship of service recipient and independent contractor, and
-          not that of employer and employee. You will not be treated as an employee of PancakeSwap for any purpose.
+          not that of employer and employee. You will not be treated as an employee of BaseSwap for any purpose.
           Nothing in this Agreement will create any, partnership, joint venture, agency, franchise, sales representative
           or employer-employee relationships between the Parties. You shall have no authority to make or accept any
-          offers or representations on behalf of PancakeSwap. You shall have no authority to bind PancakeSwap, and
-          undertake not to hold yourself out as an employee, agent or authorised representative of PancakeSwap.
+          offers or representations on behalf of BaseSwap. You shall have no authority to bind BaseSwap, and
+          undertake not to hold yourself out as an employee, agent or authorised representative of BaseSwap.
         </Text>
 
         <Text as="h3">12. No Joint Publicity</Text>
         <Text as="p">
-          You may not claim that any materials are created jointly between you and PancakeSwap, or attribute any
-          materials created or issued by you (including press releases) to PancakeSwap.
+          You may not claim that any materials are created jointly between you and BaseSwap, or attribute any
+          materials created or issued by you (including press releases) to BaseSwap.
         </Text>
 
         <Text as="h3">13. Term and Termination</Text>
         <Text as="p">
-          13.1 PancakeSwap reserves the right to terminate this Agreement in its entirety with or without cause,
+          13.1 BaseSwap reserves the right to terminate this Agreement in its entirety with or without cause,
           effective immediately with written notice of termination to you (for the avoidance of doubt, an email to the
           email address provided by you shall constitute written notice). Upon the termination of this Agreement for any
-          reason, you shall immediately cease use of (and remove from your site) all links to the PancakeSwap website
-          and all images of PancakeSwap and other materials provided under the Program.
+          reason, you shall immediately cease use of (and remove from your site) all links to the BaseSwap website
+          and all images of BaseSwap and other materials provided under the Program.
         </Text>
         <Text as="p">
-          13.2 PancakeSwap, in its sole discretion, reserves the right to suspend or terminate your account and refuse
-          any and all current or future use of the Program, or any other PancakeSwap service, for any reason and at any
+          13.2 BaseSwap, in its sole discretion, reserves the right to suspend or terminate your account and refuse
+          any and all current or future use of the Program, or any other BaseSwap service, for any reason and at any
           time. Such termination will result in the deactivation or deletion of your Affiliate Account.
         </Text>
-        <Text as="p">13.3 PancakeSwap reserves the right to refuse service to anyone for any reason at any time.</Text>
+        <Text as="p">13.3 BaseSwap reserves the right to refuse service to anyone for any reason at any time.</Text>
 
         <Text as="h3">14. Indemnification</Text>
         <Text as="p">
-          You shall indemnify PancakeSwap from and against all claims, losses, liabilities, damages, administrative
+          You shall indemnify BaseSwap from and against all claims, losses, liabilities, damages, administrative
           fines, costs and expenses (including reasonable attorney’s fees) with respect to any third-party claim arising
           out of your breach of this Agreement.
         </Text>
 
         <Text as="h3">15. Limits of Liability</Text>
         <Text as="p">
-          PancakeSwap and any of PancakeSwap&apos;s officers, directors, employees, shareholders or agents of any of
+          BaseSwap and any of BaseSwap&apos;s officers, directors, employees, shareholders or agents of any of
           them, exclude all liability and responsibility for any amount or kind of loss or damage that may result to you
           or a third party (including without limitation, any direct, indirect, punitive or consequential loss or
           damages, or any loss of income, profits, goodwill, data, contracts, use of money, or loss or damages arising
@@ -310,7 +310,7 @@ const UsAgreement = () => {
         <Text as="p">
           (b) making any representations or providing advice, in the course of your performance regarding investments,
           investment outcomes, the likelihood of returns, or suitability for investment. For example, you should not
-          make any price predictions over the CAKE tokens;
+          make any price predictions over the BASE tokens;
         </Text>
         <Text as="p">
           (c) using the Program for any illegal or unauthorised purpose or in a way which violate any laws in your
@@ -321,11 +321,11 @@ const UsAgreement = () => {
           referral link; and/or
         </Text>
         <Text as="p">
-          (e) directing or causing existing users or previous users of PancakeSwap Services to create new addresses to
+          (e) directing or causing existing users or previous users of BaseSwap Services to create new addresses to
           sign up with your referral link
         </Text>
         <Text as="p">
-          (f) Conduct marketing or make any representations of any PancakeSwap products and services to users in the
+          (f) Conduct marketing or make any representations of any BaseSwap products and services to users in the
           Prohibited Jurisdictions listed in the Annex;
         </Text>
         <Text as="p">
@@ -340,20 +340,20 @@ const UsAgreement = () => {
 
         <Text as="h3">17. Marks</Text>
         <Text as="p">
-          PancakeSwap may provide you with trademarks and/or graphical images that can be used to promote PancakeSwap.
-          You may not modify these trademarks and/or images in any way. PancakeSwap reserves the right to change the
+          BaseSwap may provide you with trademarks and/or graphical images that can be used to promote BaseSwap.
+          You may not modify these trademarks and/or images in any way. BaseSwap reserves the right to change the
           trademarks and/or images at any time without notice.
         </Text>
 
         <Text as="h3">18. Disclosure of Affiliate relationship</Text>
         <Text as="p">
           You must include a clear and concise statement to any third parties that you market to that discloses your
-          relationship as an Affiliate which is promoting PancakeSwap. For example:
+          relationship as an Affiliate which is promoting BaseSwap. For example:
         </Text>
         <Text as="p">
-          (a) If you promote PancakeSwap through a web page, podcast, blog post, or social media post as an endorsement
-          or review of PancakeSwap or incentivise others to do so, you must ensure that such post includes a clear
-          disclosure that it is an advertisement or was otherwise promoted by PancakeSwap; and
+          (a) If you promote BaseSwap through a web page, podcast, blog post, or social media post as an endorsement
+          or review of BaseSwap or incentivise others to do so, you must ensure that such post includes a clear
+          disclosure that it is an advertisement or was otherwise promoted by BaseSwap; and
         </Text>
         <Text as="p">
           (b) Your disclosure must be as close as possible to the review or endorsement, be placed above the fold so it
@@ -403,7 +403,7 @@ const UsAgreement = () => {
           Papua New Guinea, Russia, Rwanda, Saint Helena, Samoa, Sao Tome & Principe, Senegal, Sierra Leone, Singapore,
           Solomon Islands, Somalia, Sudan, Suriname, Swaziland, Syria, Tajikistan, Tanzania, Togo, Tonga, Turkmenistan,
           Tuvalu, Ukraine, Uganda, Uzbekistan, Vanuatu, Venezuela, Wallis and Futuna, West Bank, Western Sahara, Yemen,
-          Zambia, Zimbabwe (or any additional country or jurisdiction added to this list by PancakeSwap from time to
+          Zambia, Zimbabwe (or any additional country or jurisdiction added to this list by BaseSwap from time to
           time, in its sole discretion, with notice to you).
         </Text>
       </Container>

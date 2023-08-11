@@ -121,7 +121,7 @@ const ArbitrumOneBanner = () => {
             <Divider />
             <Image src={arbLogo} alt="arbLogo" width={isMobile ? 81 : 113} height={isMobile ? 20 : 28} />
           </Flex>
-          <Header>{isMobile ? t('Arbitrum One is LIVE!') : t('PancakeSwap Now Live on Arbitrum One')}</Header>
+          <Header>{isMobile ? t('Arbitrum One is LIVE!') : t('BaseSwap Now Live on Arbitrum One')}</Header>
           {isDesktop && <StyledSubheading>{t('Swap and Provide Liquidity Now')}</StyledSubheading>}
 
           <Link

@@ -10,7 +10,7 @@ const BoosterTooltip = () => {
   return (
     <>
       {t(
-        `Boost multiplier is calculated based on the staking conditions from both Farms and fixed-term CAKE syrup pool and will be automatically updated upon user actions.`,
+        `Boost multiplier is calculated based on the staking conditions from both Farms and fixed-term BASE syrup pool and will be automatically updated upon user actions.`,
       )}
       <LinkExternal
         href="https://docs.pancakeswap.finance/products/yield-farming/bcake/faq#how-are-the-bcake-multipliers-calculated"
@@ -89,8 +89,8 @@ const useBCakeMessage = (
   const bCakeMessage = useMemo(() => {
     if (!account) return t('Connect wallet to activate yield booster')
     if (!isFarmStaking) return t('Start staking to activate yield booster.')
-    if (!locked) return t('Lock CAKE to activate yield booster')
-    if (isLockEnd) return t('Renew your CAKE staking to activate yield booster')
+    if (!locked) return t('Lock BASE to activate yield booster')
+    if (isLockEnd) return t('Renew your BASE staking to activate yield booster')
     if (isReachedMaxBoostLimit && canBoostedButNot) return t('Unset other boosters to activate')
     if (canBoostedButNot) return t('Yield booster available')
     if (boosted) return t('Active')

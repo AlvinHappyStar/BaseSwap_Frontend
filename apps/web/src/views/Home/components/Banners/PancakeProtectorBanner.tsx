@@ -139,7 +139,7 @@ const PancakeProtectorBanner = () => {
             <Image src={pancakeSwapLogo} alt="pancakeSwapLogo" width={119} height={18} unoptimized />
           </LogoBox>
           <Header>{t('Join Pancake Protectors')}</Header>
-          <StyledSubheading>{isDesktop && t('Exclusive Perks for PancakeSwap Bunnies and Squads')}</StyledSubheading>
+          <StyledSubheading>{isDesktop && t('Exclusive Perks for BaseSwap Bunnies and Squads')}</StyledSubheading>
           <Flex alignItems="center" style={{ gap: isMobile ? 4 : 16 }}>
             <Link
               href="https://blog.pancakeswap.finance/articles/pancake-protectors-is-here-discover-the-power-of-cake-and-perks-for-pancake-squads-and-bunnies"

@@ -12,7 +12,7 @@ import {
   TradeType,
 } from '@pancakeswap/sdk'
 import { FAST_INTERVAL } from 'config/constants'
-import { BUSD, CAKE, USDC, STABLE_COIN } from '@pancakeswap/tokens'
+import { BUSD, BASE, USDC, STABLE_COIN } from '@pancakeswap/tokens'
 import { useMemo } from 'react'
 import useSWR from 'swr'
 import useSWRImmutable from 'swr/immutable'
@@ -47,7 +47,7 @@ export function useStablecoinPrice(
 
   const cakePrice = useCakePriceAsBN()
   const stableCoin = chainId in ChainId ? STABLE_COIN[chainId as ChainId] : undefined
-  const isCake = currency && CAKE[chainId] && currency.wrapped.equals(CAKE[chainId])
+  const isCake = currency && BASE[chainId] && currency.wrapped.equals(BASE[chainId])
 
   const isStableCoin = currency && stableCoin && currency.wrapped.equals(stableCoin)
 
@@ -314,7 +314,7 @@ export const useCakeBusdPrice = (
   const { chainId } = useActiveChainId()
   const isTestnet = !forceMainnet && isChainTestnet(chainId)
   // Return bsc testnet cake if chain is testnet
-  const cake: Token = isTestnet ? CAKE[ChainId.BSC_TESTNET] : CAKE[ChainId.BSC]
+  const cake: Token = isTestnet ? BASE[ChainId.BSC_TESTNET] : BASE[ChainId.BSC]
   return usePriceByPairs(BUSD[cake.chainId], cake)
 }
 

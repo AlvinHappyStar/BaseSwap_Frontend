@@ -1,5 +1,5 @@
 import { ChainId, ONE_HUNDRED_PERCENT, Percent, Token, Coin } from '@pancakeswap/aptos-swap-sdk'
-import { APT, CE_USDC, L0_USDC, WH_USDC, CAKE, CE_BNB_MAINNET } from 'config/coins'
+import { APT, CE_USDC, L0_USDC, WH_USDC, BASE, CE_BNB_MAINNET } from 'config/coins'
 import { ChainTokenList } from './types'
 
 export const BIG_INT_ZERO = 0n
@@ -15,8 +15,8 @@ export const INITIAL_ALLOWED_SLIPPAGE = 50
 export const DEFAULT_DEADLINE_FROM_NOW = 60 * 20
 
 export const SUGGESTED_BASES: ChainTokenList = {
-  [ChainId.MAINNET]: [L0_USDC[ChainId.MAINNET], CAKE[ChainId.MAINNET], CE_BNB_MAINNET],
-  [ChainId.TESTNET]: [L0_USDC[ChainId.TESTNET], CAKE[ChainId.TESTNET], CE_BNB_MAINNET],
+  [ChainId.MAINNET]: [L0_USDC[ChainId.MAINNET], BASE[ChainId.MAINNET], CE_BNB_MAINNET],
+  [ChainId.TESTNET]: [L0_USDC[ChainId.TESTNET], BASE[ChainId.TESTNET], CE_BNB_MAINNET],
 }
 
 // used to construct intermediary pairs for trading

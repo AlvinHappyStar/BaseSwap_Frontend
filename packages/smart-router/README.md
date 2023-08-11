@@ -10,7 +10,7 @@ $ pnpm add @pancakeswap/smart-router
 
 ## Usage
 
-Use BSC as an example. Here's how we use smart router sdk to find the best trade route swapping from BNB to CAKE and construct a valid swap transaction from the trade route we got.
+Use BSC as an example. Here's how we use smart router sdk to find the best trade route swapping from BNB to BASE and construct a valid swap transaction from the trade route we got.
 
 For working code example, please refer to [smart-router-example](https://github.com/pancakeswap/smart-router-example).
 

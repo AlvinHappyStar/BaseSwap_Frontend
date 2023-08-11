@@ -51,7 +51,7 @@ import {
 } from 'utils/contractHelpers'
 
 import { ChainId, WNATIVE, pancakePairV2ABI } from '@pancakeswap/sdk'
-import { CAKE } from '@pancakeswap/tokens'
+import { BASE } from '@pancakeswap/tokens'
 import { nonfungiblePositionManagerABI } from '@pancakeswap/v3-sdk'
 import { multicallABI } from 'config/abi/Multicall'
 import { erc20Bytes32ABI } from 'config/abi/erc20_bytes32'
@@ -90,7 +90,7 @@ export const useERC20 = (address: Address) => {
 export const useCake = () => {
   const { chainId } = useActiveChainId()
 
-  return useContract(CAKE[chainId].address ?? CAKE[ChainId.BSC].address, erc20ABI)
+  return useContract(BASE[chainId].address ?? BASE[ChainId.BSC].address, erc20ABI)
 }
 
 export const useBunnyFactory = () => {
@@ -191,7 +191,7 @@ export const usePredictionsContract = (address: Address, tokenSymbol: string) =>
     if (address === getPredictionsV1Address()) {
       return getPredictionsV1Contract(signer)
     }
-    const getPredContract = tokenSymbol === 'CAKE' ? getCakePredictionsContract : getPredictionsV2Contract
+    const getPredContract = tokenSymbol === 'BASE' ? getCakePredictionsContract : getPredictionsV2Contract
 
     return getPredContract(address, signer)
   }, [address, tokenSymbol, signer])

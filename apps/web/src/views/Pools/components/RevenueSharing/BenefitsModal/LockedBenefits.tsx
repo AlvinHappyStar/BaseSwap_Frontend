@@ -27,7 +27,7 @@ const LockedBenefits = () => {
   const iCakeTooltipComponent = () => (
     <>
       <Text>
-        {t('iCAKE allows you to participate in the IFO public sales and commit up to %iCake% amount of CAKE.', {
+        {t('iCAKE allows you to participate in the IFO public sales and commit up to %iCake% amount of BASE.', {
           iCake: cakeBenefits?.iCake,
         })}
       </Text>
@@ -41,7 +41,7 @@ const LockedBenefits = () => {
 
   const bCakeTooltipComponent = () => (
     <>
-      <Text>{t('bCAKE allows you to boost your yield in PancakeSwap Farms by up to 2x.')}</Text>
+      <Text>{t('bCAKE allows you to boost your yield in BaseSwap Farms by up to 2x.')}</Text>
       <NextLinkFromReactRouter to="/farms">
         <Text bold color="primary">
           {t('Learn More')}
@@ -53,7 +53,7 @@ const LockedBenefits = () => {
   const vCakeTooltipComponent = () => (
     <>
       <Text>
-        {t('vCAKE boosts your voting power to %totalScore% in the PancakeSwap voting governance.', {
+        {t('vCAKE boosts your voting power to %totalScore% in the BaseSwap voting governance.', {
           totalScore: cakeBenefits?.vCake?.totalScore,
         })}
       </Text>
@@ -78,7 +78,7 @@ const LockedBenefits = () => {
           <Box mt="8px">
             <Flex mt="8px" flexDirection="row" alignItems="center">
               <Text color="textSubtle" fontSize="14px" mr="auto">
-                {t('CAKE Yield')}
+                {t('BASE Yield')}
               </Text>
               <Text style={{ display: 'inline-block' }} color="success" bold>
                 {`${Number(lockedApy).toFixed(2)}%`}

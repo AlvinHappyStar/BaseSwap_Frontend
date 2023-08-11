@@ -1,5 +1,5 @@
 import { Token } from '@pancakeswap/swap-sdk-core'
-import { CAKE } from '@pancakeswap/tokens'
+import { BASE } from '@pancakeswap/tokens'
 import { WNATIVE } from '@pancakeswap/sdk'
 import { unwrappedToken } from '@pancakeswap/utils/unwrappedToken'
 import { priceHelperTokens } from '../constants/common'
@@ -11,7 +11,7 @@ function sortFarmLP(token0: Token, token1: Token) {
     const commonTokensList = [
       WNATIVE[token0.chainId as keyof typeof WNATIVE],
       ...commonTokens.list,
-      CAKE[token0.chainId as keyof typeof CAKE] ? CAKE[token0.chainId as keyof typeof CAKE] : undefined,
+      BASE[token0.chainId as keyof typeof BASE] ? BASE[token0.chainId as keyof typeof BASE] : undefined,
     ].filter(Boolean) as Token[]
     const someToken0 = commonTokensList.some((token) => token.equals(token0))
     const someToken1 = commonTokensList.some((token) => token.equals(token1))

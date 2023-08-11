@@ -71,7 +71,7 @@ const config = (t) => [
           </Link>
         </NextLinkFromReactRouter>
         {t(
-          'PancakeSwap is also working to support a conversion contract on our liquid staking page to convert WBETH back to ETH seamlessly.',
+          'BaseSwap is also working to support a conversion contract on our liquid staking page to convert WBETH back to ETH seamlessly.',
         )}
       </>
     ),

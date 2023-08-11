@@ -111,7 +111,7 @@ const IfoCardTokens: React.FC<React.PropsWithChildren<IfoCardTokensProps>> = ({
   const getNow = useLedgerTimestamp()
   const { targetRef, tooltip, tooltipVisible } = useTooltip(
     t(
-      'Sorry, you didn’t contribute enough CAKE to meet the minimum threshold. You didn’t buy anything in this sale, but you can still reclaim your CAKE.',
+      'Sorry, you didn’t contribute enough BASE to meet the minimum threshold. You didn’t buy anything in this sale, but you can still reclaim your BASE.',
     ),
     { placement: 'bottom' },
   )

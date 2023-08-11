@@ -44,7 +44,7 @@ const ContributeButton: React.FC<React.PropsWithChildren<Props>> = ({ poolId, if
     toastSuccess(
       t('Success!'),
       <ToastDescriptionWithTx txHash={txHash}>
-        {t('You have contributed %amount% CAKE to this IFO!', {
+        {t('You have contributed %amount% BASE to this IFO!', {
           amount: getBalanceNumber(amount, ifo.currency.decimals),
         })}
       </ToastDescriptionWithTx>,
@@ -87,7 +87,7 @@ const ContributeButton: React.FC<React.PropsWithChildren<Props>> = ({ poolId, if
       disabled={isDisabled}
     >
       {/* TODO: Text should support another token. */}
-      {isMaxCommitted && status === 'live' ? t('Max. Committed') : t('Commit CAKE')}
+      {isMaxCommitted && status === 'live' ? t('Max. Committed') : t('Commit BASE')}
     </Button>
   )
 }

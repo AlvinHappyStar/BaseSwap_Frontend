@@ -26,7 +26,7 @@ export const FarmMultiplierInfo: React.FC<React.PropsWithChildren<FarmMultiplier
   return (
     <>
       <Text bold>
-        {t("Farm’s CAKE Per Second:")}
+        {t("Farm’s BASE Per Second:")}
         <InlineText marginLeft={2}>{farmCakePerSecond}</InlineText>
       </Text>
       <Text bold>
@@ -35,11 +35,11 @@ export const FarmMultiplierInfo: React.FC<React.PropsWithChildren<FarmMultiplier
       </Text>
       <Text my="24px">
         {t(
-          "The Farm Multiplier represents the proportion of CAKE rewards each farm receives as a proportion of its farm group."
+          "The Farm Multiplier represents the proportion of BASE rewards each farm receives as a proportion of its farm group."
         )}
       </Text>
       <Text my="24px">
-        {t("For example, if a 1x farm received 1 CAKE per block, a 40x farm would receive 40 CAKE per block.")}
+        {t("For example, if a 1x farm received 1 BASE per block, a 40x farm would receive 40 BASE per block.")}
       </Text>
       <Text>
         {t("Different farm groups have different sets of multipliers.")}

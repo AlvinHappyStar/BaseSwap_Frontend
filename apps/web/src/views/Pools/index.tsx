@@ -70,7 +70,7 @@ const Pools: React.FC<React.PropsWithChildren> = () => {
               {showFinishedPools && chainId === ChainId.BSC && (
                 <FinishedTextContainer>
                   <Text fontSize={['16px', null, '20px']} color="failure" pr="4px">
-                    {t('Looking for v1 CAKE syrup pools?')}
+                    {t('Looking for v1 BASE syrup pools?')}
                   </Text>
                   <FinishedTextLink
                     href="https://v1-farms.pancakeswap.finance/pools/history"

@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState, useMemo, memo } from "react";
 import { Currency, CurrencyAmount, ONE_HUNDRED_PERCENT, ZERO_PERCENT } from "@pancakeswap/sdk";
 import { FeeCalculator, encodeSqrtRatioX96 } from "@pancakeswap/v3-sdk";
 import styled from "styled-components";
-import { CAKE } from "@pancakeswap/tokens";
+import { BASE } from "@pancakeswap/tokens";
 
 import { Section } from "./Section";
 import { Box, Row, AutoColumn, Toggle, RowBetween, DoubleCurrencyLogo, Message } from "../../components";
@@ -44,7 +44,7 @@ interface Props {
 
 const getCakeAssetsByReward = (chainId: number, cakeRewardAmount = 0, cakePrice: string) => {
   return {
-    currency: CAKE[chainId as keyof typeof CAKE],
+    currency: BASE[chainId as keyof typeof BASE],
     amount: cakeRewardAmount,
     price: cakePrice,
     value: Number.isFinite(cakeRewardAmount) ? +cakeRewardAmount * +cakePrice : Infinity,
@@ -109,9 +109,9 @@ export const ImpermanentLossCalculator = memo(function ImpermanentLossCalculator
   );
 
   const exitAssets = useMemo<Asset[] | undefined>(() => {
-    if (assets && isFarm && currencyA && currencyA.chainId in CAKE && cakePrice) {
+    if (assets && isFarm && currencyA && currencyA.chainId in BASE && cakePrice) {
       const cakePriceToUse =
-        assets.find((a) => a.currency.equals(CAKE[currencyA.chainId as keyof typeof CAKE]))?.price ?? cakePrice;
+        assets.find((a) => a.currency.equals(BASE[currencyA.chainId as keyof typeof BASE]))?.price ?? cakePrice;
       return [...assets, getCakeAssetsByReward(currencyA.chainId, cakeRewardAmount, cakePriceToUse)];
     }
     return assets;

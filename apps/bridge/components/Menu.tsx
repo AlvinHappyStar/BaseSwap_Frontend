@@ -27,7 +27,7 @@ const StyledMenuItem = styled('div')<{ $isActive?: boolean }>`
 `
 
 const MenuConfig = [
-  { title: 'CAKE', href: '/' },
+  { title: 'BASE', href: '/' },
   {
     title: 'EVMs',
     href: '/axelar',

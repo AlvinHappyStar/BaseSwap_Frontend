@@ -22,10 +22,10 @@ const HowItWork = () => {
         {t('are meant to be shared')}
       </Heading>
       <Text textAlign="center" color="textSubtle">
-        {t('Together we can make the PancakeSwap community even stronger')}
+        {t('Together we can make the BaseSwap community even stronger')}
       </Text>
       <Text textAlign="center" color="textSubtle" bold mb="32px">
-        {t('How do you Become a PancakeSwap Affiliate?')}
+        {t('How do you Become a BaseSwap Affiliate?')}
       </Text>
       <Flex width={['280px', '280px', '280px', '888px']} flexDirection={['column', 'column', 'column', 'row']}>
         <Flex width={['100%', '100%', '100%', '33.33%']} m={['0 0 16px 0', '0 0 16px 0', '0 0 16px 0', '0 16px 0 0']}>
@@ -85,10 +85,10 @@ const HowItWork = () => {
                 {t('Earning')}
               </Text>
               <Text fontSize={['40px']} bold color="failure" lineHeight="110%">
-                {t('CAKE')}
+                {t('BASE')}
               </Text>
               <Text fontSize={['14px']} mt="24px">
-                {t('Earn up to 20% referral commissions in CAKE')}
+                {t('Earn up to 20% referral commissions in BASE')}
               </Text>
             </Box>
           </Card>

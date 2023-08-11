@@ -41,7 +41,7 @@ const DesktopResult: React.FC<React.PropsWithChildren<DesktopResultProps>> = ({ 
       <Td textAlign="right">
         <Text bold>{`$${formatNumber(rank.estimateRewardUSD)}`}</Text>
         <Text fontSize={12} color="textSubtle">
-          {`~${formatNumber(cakeAmount)} CAKE`}
+          {`~${formatNumber(cakeAmount)} BASE`}
         </Text>
       </Td>
     </tr>

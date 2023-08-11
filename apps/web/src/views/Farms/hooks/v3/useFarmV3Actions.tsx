@@ -162,7 +162,7 @@ const useFarmV3Actions = ({
       toastSuccess(
         `${t('Harvested')}!`,
         <ToastDescriptionWithTx txHash={resp.transactionHash}>
-          {t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'CAKE' })}
+          {t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'BASE' })}
         </ToastDescriptionWithTx>,
       )
       mutate((key) => Array.isArray(key) && key[0] === 'mcv3-harvest', undefined)
@@ -225,7 +225,7 @@ export function useFarmsV3BatchHarvest() {
         toastSuccess(
           `${t('Harvested')}!`,
           <ToastDescriptionWithTx txHash={resp.transactionHash}>
-            {t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'CAKE' })}
+            {t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'BASE' })}
           </ToastDescriptionWithTx>,
         )
         mutate((key) => Array.isArray(key) && key[0] === 'mcv3-harvest', undefined)

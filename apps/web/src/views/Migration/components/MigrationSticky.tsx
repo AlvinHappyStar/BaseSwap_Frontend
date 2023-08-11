@@ -69,8 +69,8 @@ export const TEXT = {
     title: <Trans>MasterChef v2 Migration</Trans>,
     steps: [
       {
-        title: <Trans>Unstaking LP Tokens and CAKE</Trans>,
-        subTitle: <Trans>All the earned CAKE will be harvested to your wallet upon unstake.</Trans>,
+        title: <Trans>Unstaking LP Tokens and BASE</Trans>,
+        subTitle: <Trans>All the earned BASE will be harvested to your wallet upon unstake.</Trans>,
         button: <Trans>Go to Stake</Trans>,
       },
       {
@@ -81,11 +81,11 @@ export const TEXT = {
     ],
   },
   v3: {
-    title: <Trans>PancakeSwap v3 Migration</Trans>,
+    title: <Trans>BaseSwap v3 Migration</Trans>,
     steps: [
       {
         title: <Trans>Unstaking from V2 Farms</Trans>,
-        subTitle: <Trans>All the earned CAKE will be harvested to your wallet upon unstake.</Trans>,
+        subTitle: <Trans>All the earned BASE will be harvested to your wallet upon unstake.</Trans>,
         button: <Trans>Next Steps</Trans>,
       },
       {
@@ -109,7 +109,7 @@ export const TEXT = {
       },
       {
         title: <Trans>Staking to V3 Farms</Trans>,
-        subTitle: <Trans>Start earning CAKE by staking your liquidity positions to V3 Farms!</Trans>,
+        subTitle: <Trans>Start earning BASE by staking your liquidity positions to V3 Farms!</Trans>,
         button: <Trans>Finish</Trans>,
       },
     ],

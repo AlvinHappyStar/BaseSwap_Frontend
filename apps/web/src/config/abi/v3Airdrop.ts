@@ -39,7 +39,7 @@ export const v3AirdropABI = [
   },
   {
     inputs: [],
-    name: 'CAKE',
+    name: 'BASE',
     outputs: [{ internalType: 'contract IERC20', name: '', type: 'address' }],
     stateMutability: 'view',
     type: 'function',

@@ -163,10 +163,10 @@ const RevenueSharing: React.FunctionComponent<React.PropsWithChildren<RevenueSha
           <Flex mt="8px" flexDirection="row" alignItems="center">
             <BenefitsTooltipsText
               title={t('Available for claiming')}
-              tooltipComponent={<Text>{t('Amount of revenue available for claiming in CAKE.')}</Text>}
+              tooltipComponent={<Text>{t('Amount of revenue available for claiming in BASE.')}</Text>}
             />
             <Box>
-              <Balance unit=" CAKE" bold value={availableCake} decimals={2} />
+              <Balance unit=" BASE" bold value={availableCake} decimals={2} />
               <Balance
                 ml="4px"
                 color="textSubtle"

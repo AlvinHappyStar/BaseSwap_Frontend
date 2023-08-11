@@ -110,16 +110,16 @@ const V3AirdropModal: React.FC<V3AirdropModalProps> = ({ data, onDismiss }) => {
   const textDisplay = (): string => {
     if (hasPart1 && hasPart2) {
       return t(
-        'You have received an exclusive v3 Legendary and v3 Early Supporter NFT, as well as a CAKE airdrop for participating in the PancakeSwap v3 Launch campaign. Claim your reward now and enjoy the benefits of being an early adopter!',
+        'You have received an exclusive v3 Legendary and v3 Early Supporter NFT, as well as a BASE airdrop for participating in the BaseSwap v3 Launch campaign. Claim your reward now and enjoy the benefits of being an early adopter!',
       )
     }
     if (hasPart1) {
       return t(
-        'You have received an exclusive v3 Legendary NFT and CAKE airdrop for participating in the PancakeSwap v3 Launch campaign. Claim your reward now and enjoy the benefits of being an early adopter!',
+        'You have received an exclusive v3 Legendary NFT and BASE airdrop for participating in the BaseSwap v3 Launch campaign. Claim your reward now and enjoy the benefits of being an early adopter!',
       )
     }
     return t(
-      'You have received an exclusive v3 Early Supporter NFT and CAKE airdrop for participating in the PancakeSwap v3 Launch campaign. Claim your reward now and enjoy the benefits of being an early adopter!',
+      'You have received an exclusive v3 Early Supporter NFT and BASE airdrop for participating in the BaseSwap v3 Launch campaign. Claim your reward now and enjoy the benefits of being an early adopter!',
     )
   }
 

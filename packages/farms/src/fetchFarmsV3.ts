@@ -1,5 +1,5 @@
 import { ERC20Token, Currency, ChainId } from '@pancakeswap/sdk'
-import { CAKE } from '@pancakeswap/tokens'
+import { BASE } from '@pancakeswap/tokens'
 import { tickToPrice } from '@pancakeswap/v3-sdk'
 import { Address, PublicClient, formatUnits } from 'viem'
 import BN from 'bignumber.js'
@@ -477,18 +477,18 @@ export function getFarmsPrices(
       tokenPriceBusd = new BN(commonPrice[farm.token.address])
     }
 
-    // try price via CAKE
+    // try price via BASE
     if (
       tokenPriceBusd.isZero() &&
-      farm.token.chainId in CAKE &&
-      farm.token.equals(CAKE[farm.token.chainId as keyof typeof CAKE])
+      farm.token.chainId in BASE &&
+      farm.token.equals(BASE[farm.token.chainId as keyof typeof BASE])
     ) {
       tokenPriceBusd = new BN(cakePriceUSD)
     }
     if (
       quoteTokenPriceBusd.isZero() &&
-      farm.quoteToken.chainId in CAKE &&
-      farm.quoteToken.equals(CAKE[farm.quoteToken.chainId as keyof typeof CAKE])
+      farm.quoteToken.chainId in BASE &&
+      farm.quoteToken.equals(BASE[farm.quoteToken.chainId as keyof typeof BASE])
     ) {
       quoteTokenPriceBusd = new BN(cakePriceUSD)
     }

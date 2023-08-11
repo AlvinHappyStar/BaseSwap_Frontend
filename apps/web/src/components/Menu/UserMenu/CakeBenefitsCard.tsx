@@ -63,7 +63,7 @@ const CakeBenefitsCard: React.FC<React.PropsWithChildren<CakeBenefitsCardProps>>
   } = useTooltip(
     <>
       <Text>
-        {t(`%lockedCake% CAKE (including rewards) are locked in the CAKE Pool until %lockedEndTime%`, {
+        {t(`%lockedCake% BASE (including rewards) are locked in the BASE Pool until %lockedEndTime%`, {
           lockedCake: cakeBenefits?.lockedCake,
           lockedEndTime: cakeBenefits?.lockedEndTime,
         })}
@@ -87,7 +87,7 @@ const CakeBenefitsCard: React.FC<React.PropsWithChildren<CakeBenefitsCardProps>>
   } = useTooltip(
     <>
       <Text>
-        {t(`iCAKE allows you to participate in the IFO public sales and commit up to %iCake% amount of CAKE.`, {
+        {t(`iCAKE allows you to participate in the IFO public sales and commit up to %iCake% amount of BASE.`, {
           iCake: cakeBenefits?.iCake,
         })}
       </Text>
@@ -109,7 +109,7 @@ const CakeBenefitsCard: React.FC<React.PropsWithChildren<CakeBenefitsCardProps>>
     tooltipVisible: bCakeTooltipVisible,
   } = useTooltip(
     <>
-      <Text>{t(`bCAKE allows you to boost your yield in PancakeSwap Farms by up to 2x.`)}</Text>
+      <Text>{t(`bCAKE allows you to boost your yield in BaseSwap Farms by up to 2x.`)}</Text>
       <NextLinkFromReactRouter to="/farms" onClick={onDismiss}>
         <Text bold color="primary">
           {t('Learn More')}
@@ -129,7 +129,7 @@ const CakeBenefitsCard: React.FC<React.PropsWithChildren<CakeBenefitsCardProps>>
   } = useTooltip(
     <>
       <Text>
-        {t(`vCAKE boosts your voting power to %totalScore% in the PancakeSwap voting governance.`, {
+        {t(`vCAKE boosts your voting power to %totalScore% in the BaseSwap voting governance.`, {
           totalScore: cakeBenefits?.vCake?.totalScore,
         })}
       </Text>
@@ -153,7 +153,7 @@ const CakeBenefitsCard: React.FC<React.PropsWithChildren<CakeBenefitsCardProps>>
             <Tag variant="secondary" mr="auto">
               <Flex alignItems="center">
                 <Box as={LockIcon} mr="4px" />
-                {t('No CAKE locked')}
+                {t('No BASE locked')}
               </Flex>
             </Tag>
             <Text fontSize="16px">{cakeBenefits?.lockedCake}</Text>
@@ -161,7 +161,7 @@ const CakeBenefitsCard: React.FC<React.PropsWithChildren<CakeBenefitsCardProps>>
           <Message mt="8px" mb="16px" variant="warning">
             <MessageText maxWidth="200px">
               {t(
-                'Lock CAKE to enjoy the benefits of farm yield boosting, participating in IFOs, voting power boosts, and so much more!',
+                'Lock BASE to enjoy the benefits of farm yield boosting, participating in IFOs, voting power boosts, and so much more!',
               )}{' '}
               <NextLinkFromReactRouter
                 style={{ textDecoration: 'underline', fontWeight: 'bold' }}
@@ -179,7 +179,7 @@ const CakeBenefitsCard: React.FC<React.PropsWithChildren<CakeBenefitsCardProps>>
             <Tag variant="failure" mr="auto">
               <Flex alignItems="center">
                 <Box as={LockIcon} mr="4px" />
-                {t('CAKE staking expired')}
+                {t('BASE staking expired')}
               </Flex>
             </Tag>
             <Text fontSize="16px">{cakeBenefits?.lockedCake}</Text>
@@ -206,7 +206,7 @@ const CakeBenefitsCard: React.FC<React.PropsWithChildren<CakeBenefitsCardProps>>
               <Tag variant="secondary" mr="auto">
                 <Flex alignItems="center">
                   <Box as={LockIcon} mr="4px" />
-                  {t('CAKE locked')}
+                  {t('BASE locked')}
                 </Flex>
               </Tag>
               <TooltipText ref={cakeTargetRef} bold fontSize="16px">

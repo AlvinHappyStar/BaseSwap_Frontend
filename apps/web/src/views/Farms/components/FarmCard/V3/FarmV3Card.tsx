@@ -68,9 +68,9 @@ export const FarmV3Card: React.FC<React.PropsWithChildren<FarmCardProps>> = ({ f
   const farmCakePerSecond = getFarmCakePerSecond(farm.poolWeight)
 
   const lpLabel = farm.lpSymbol && farm.lpSymbol.replace(/pancake/gi, '')
-  const earnLabel = t('CAKE + Fees')
+  const earnLabel = t('BASE + Fees')
   const { lpAddress } = farm
-  const isPromotedFarm = farm.token.symbol === 'CAKE'
+  const isPromotedFarm = farm.token.symbol === 'BASE'
   const { status: boostStatus } = useBoostStatus(farm.pid)
 
   const infoUrl = useMemo(() => {
@@ -84,7 +84,7 @@ export const FarmV3Card: React.FC<React.PropsWithChildren<FarmCardProps>> = ({ f
     <>
       <Text>
         {t(
-          'Global APR calculated using the total amount of active & staked liquidity with the pool CAKE reward emissions.',
+          'Global APR calculated using the total amount of active & staked liquidity with the pool BASE reward emissions.',
         )}
       </Text>
       <br />

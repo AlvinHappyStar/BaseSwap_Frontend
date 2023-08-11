@@ -2,7 +2,7 @@ import { Price, ERC20Token } from '@pancakeswap/sdk'
 import getRatePercentageDifference from './getRatePercentageDifference'
 import { getRatePercentageMessage, PercentageDirection } from './getRatePercentageMessage'
 
-const CAKE = new ERC20Token(56, '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82', 18, 'CAKE', 'PancakeSwap Token')
+const BASE = new ERC20Token(56, '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82', 18, 'BASE', 'BaseSwap Token')
 const BUSD = new ERC20Token(56, '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56', 18, 'BUSD', 'Binance USD')
 
 const EIGHTEEN_DECIMALS = 10n ** 18n
@@ -12,11 +12,11 @@ const SEVEN = 7n * EIGHTEEN_DECIMALS
 const SEVEN_HUNDRED = 700n * EIGHTEEN_DECIMALS
 const ELEVEN = 11n * EIGHTEEN_DECIMALS
 
-const ONE_BUSD_PER_CAKE = new Price(CAKE, BUSD, EIGHTEEN_DECIMALS, ONE)
-const FIVE_BUSD_PER_CAKE = new Price(CAKE, BUSD, EIGHTEEN_DECIMALS, FIVE)
-const SEVEN_BUSD_PER_CAKE = new Price(CAKE, BUSD, EIGHTEEN_DECIMALS, SEVEN)
-const ELEVEN_BUSD_PER_CAKE = new Price(CAKE, BUSD, EIGHTEEN_DECIMALS, ELEVEN)
-const SEVEN_HUNDRED_BUSD_PER_CAKE = new Price(CAKE, BUSD, EIGHTEEN_DECIMALS, SEVEN_HUNDRED)
+const ONE_BUSD_PER_CAKE = new Price(BASE, BUSD, EIGHTEEN_DECIMALS, ONE)
+const FIVE_BUSD_PER_CAKE = new Price(BASE, BUSD, EIGHTEEN_DECIMALS, FIVE)
+const SEVEN_BUSD_PER_CAKE = new Price(BASE, BUSD, EIGHTEEN_DECIMALS, SEVEN)
+const ELEVEN_BUSD_PER_CAKE = new Price(BASE, BUSD, EIGHTEEN_DECIMALS, ELEVEN)
+const SEVEN_HUNDRED_BUSD_PER_CAKE = new Price(BASE, BUSD, EIGHTEEN_DECIMALS, SEVEN_HUNDRED)
 
 const mockT = (key: string, data?: { percentage?: string }) => {
   return key.includes('%percentage%') ? key.replace('%percentage%', data.percentage) : key

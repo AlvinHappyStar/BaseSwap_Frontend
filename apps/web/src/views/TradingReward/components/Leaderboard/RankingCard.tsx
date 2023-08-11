@@ -116,7 +116,7 @@ const RankingCard: React.FC<React.PropsWithChildren<RankingCardProps>> = ({ rank
                     {`$${formatNumber(user?.estimateRewardUSD)}`}
                   </Text>
                   <Text textAlign="right" color="textSubtle" fontSize="12px">
-                    {`~${formatNumber(cakeAmount)} CAKE`}
+                    {`~${formatNumber(cakeAmount)} BASE`}
                   </Text>
                 </>
               )}

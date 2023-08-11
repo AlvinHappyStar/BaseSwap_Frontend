@@ -139,7 +139,7 @@ const LatestReward: React.FC<React.PropsWithChildren<LatestRewardProps>> = ({
           <SingleLatestReward
             usdAmountTitle={t('Affiliate Reward')}
             usdAmount={Number(affiliateRewardFeeUSD)}
-            cakeAmountTitle={t('Affiliate CAKE Earned')}
+            cakeAmountTitle={t('Affiliate BASE Earned')}
             cakeAmount={affiliateTotalCakeEarned}
             disabled={isAffiliateClaimDisabled}
             clickClaim={() => handleClaim(true)}
@@ -149,7 +149,7 @@ const LatestReward: React.FC<React.PropsWithChildren<LatestRewardProps>> = ({
       <SingleLatestReward
         usdAmountTitle={t('User Reward')}
         usdAmount={Number(userRewardFeeUSD)}
-        cakeAmountTitle={t('User CAKE Earned')}
+        cakeAmountTitle={t('User BASE Earned')}
         cakeAmount={userTotalCakeEarned}
         disabled={isUserClaimDisabled}
         clickClaim={() => handleClaim(false)}

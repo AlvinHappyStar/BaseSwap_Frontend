@@ -37,7 +37,7 @@ import FlexRow from '../FlexRow'
 
 const LOGOS = {
   BNB: BinanceIcon,
-  CAKE: LogoIcon,
+  BASE: LogoIcon,
 }
 
 interface SetPositionCardProps {
@@ -77,7 +77,7 @@ const getValueAsEthersBn = (value: string) => {
 
 const TOKEN_BALANCE_CONFIG = {
   BNB: useGetBnbBalance,
-  CAKE: useBSCCakeBalance,
+  BASE: useBSCCakeBalance,
 } as const
 
 const SetPositionCard: React.FC<React.PropsWithChildren<SetPositionCardProps>> = ({
@@ -102,7 +102,7 @@ const SetPositionCard: React.FC<React.PropsWithChildren<SetPositionCardProps>> =
     return TOKEN_BALANCE_CONFIG[token.symbol as keyof typeof TOKEN_BALANCE_CONFIG]
   }, [token.symbol])
 
-  const { setLastUpdated, allowance } = useCakeApprovalStatus(token.symbol === 'CAKE' ? predictionsAddress : null)
+  const { setLastUpdated, allowance } = useCakeApprovalStatus(token.symbol === 'BASE' ? predictionsAddress : null)
   const { handleApprove, pendingTx } = useCakeApprove(
     setLastUpdated,
     predictionsAddress,
@@ -167,14 +167,14 @@ const SetPositionCard: React.FC<React.PropsWithChildren<SetPositionCardProps>> =
   const handleEnterPosition = async () => {
     const betMethod = position === BetPosition.BULL ? 'betBull' : 'betBear'
     const callOptions =
-      token.symbol === 'CAKE'
+      token.symbol === 'BASE'
         ? {
             gas: 300000n,
             value: 0n,
           }
         : { value: BigInt(valueAsBn.toString()) }
 
-    const args = token.symbol === 'CAKE' ? [epoch, valueAsBn.toString()] : [epoch]
+    const args = token.symbol === 'BASE' ? [epoch, valueAsBn.toString()] : [epoch]
 
     const receipt = await fetchWithCatchTxError(() => {
       return callWithGasPrice(predictionsContract as any, betMethod, args, callOptions)

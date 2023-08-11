@@ -121,7 +121,7 @@ export const useFarms = () => {
         const poolWeight = totalAlloc ? allocPoint.div(new BigNumber(totalAlloc)) : BIG_ZERO
 
         // tokenPriceVsQuote info for this price helper farm is wrong, opposite way should be used
-        const isAptCakeLp = config.pid === null && config.lpSymbol === 'APT-CAKE LP'
+        const isAptCakeLp = config.pid === null && config.lpSymbol === 'APT-BASE LP'
 
         return {
           ...config,

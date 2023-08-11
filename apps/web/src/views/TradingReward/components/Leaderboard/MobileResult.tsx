@@ -66,7 +66,7 @@ const MobileResult: React.FC<React.PropsWithChildren<MobileResultProps>> = ({ is
             {`$${formatNumber(rank.estimateRewardUSD)}`}
           </Text>
           <Text fontSize="12px" color="textSubtle" textAlign="right" lineHeight="110%">
-            {`~${formatNumber(cakeAmount)} CAKE`}
+            {`~${formatNumber(cakeAmount)} BASE`}
           </Text>
         </Box>
       </Flex>

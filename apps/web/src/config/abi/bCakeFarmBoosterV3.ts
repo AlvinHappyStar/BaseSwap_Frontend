@@ -129,7 +129,7 @@ export const bCakeFarmBoosterV3ABI = [
   },
   {
     inputs: [],
-    name: 'CAKE',
+    name: 'BASE',
     outputs: [{ internalType: 'address', name: '', type: 'address' }],
     stateMutability: 'view',
     type: 'function',

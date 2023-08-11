@@ -137,7 +137,7 @@ export default function SwapModalFooter({
                   </Text>
                   <Text>- {t('%amount% to LP token holders', { amount: lpHoldersFeePercent })}</Text>
                   <Text>- {t('%amount% to the Treasury', { amount: treasuryFeePercent })}</Text>
-                  <Text>- {t('%amount% towards CAKE buyback and burn', { amount: buyBackFeePercent })}</Text>
+                  <Text>- {t('%amount% towards BASE buyback and burn', { amount: buyBackFeePercent })}</Text>
                   <Text mt="12px">
                     {t('For each stableswap trade, refer to the fee table')}
                     <Link
@@ -155,7 +155,7 @@ export default function SwapModalFooter({
                     </Text>
                     :{' '}
                     {t(
-                      'PancakeSwap does not charge any fees for trades. However, the market makers charge an implied fee of 0.05% - 0.25% (non-stablecoin) / 0.01% (stablecoin) factored into the quotes provided by them.',
+                      'BaseSwap does not charge any fees for trades. However, the market makers charge an implied fee of 0.05% - 0.25% (non-stablecoin) / 0.01% (stablecoin) factored into the quotes provided by them.',
                     )}
                   </Text>
                 </>

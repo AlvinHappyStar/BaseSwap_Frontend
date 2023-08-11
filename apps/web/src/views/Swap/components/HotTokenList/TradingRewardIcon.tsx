@@ -20,7 +20,7 @@ const TradingRewardIcon = ({ pairs }: TradingRewardIconProps) => {
 
   const { targetRef, tooltip, tooltipVisible } = useTooltip(
     <Flex flexDirection="column" width={300}>
-      <Text bold>{t('This token contains trading pair(s) eligible for earning CAKE by trading:')}</Text>
+      <Text bold>{t('This token contains trading pair(s) eligible for earning BASE by trading:')}</Text>
       <Flex flexDirection="column">
         {pairs.map((pair) => (
           <Text key={pair.lpAddress} bold as="li">{`${pair.lpSymbol} - ${pair.feeAmount / 10000}%`}</Text>

@@ -36,7 +36,7 @@ const SharingPoolNameCell = () => {
       <LogoRoundIcon mr="8px" width={43} height={43} style={{ minWidth: 43 }} />
       <Box>
         <Text fontSize={12} color="secondary" bold lineHeight="110%" textTransform="uppercase">
-          {t('CAKE locked')}
+          {t('BASE locked')}
         </Text>
         <Balance bold decimals={2} fontSize={20} lineHeight="110%" value={currentLockedAmountNumber} />
         <Balance

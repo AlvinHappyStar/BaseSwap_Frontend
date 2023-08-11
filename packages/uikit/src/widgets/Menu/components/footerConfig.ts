@@ -27,7 +27,7 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
         href: "https://v2litepaper.pancakeswap.finance/",
       },
       {
-        label: t("CAKE Emission Projection"),
+        label: t("BASE Emission Projection"),
         href: "https://analytics.pancakeswap.finance/",
       },
       {

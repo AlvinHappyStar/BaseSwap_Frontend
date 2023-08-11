@@ -35,7 +35,7 @@ describe('Config farms', () => {
       farm.quoteToken.symbol,
     )
 
-    // Skip CAKE
+    // Skip BASE
     if (pid !== CAKE_PID) {
       const reservesAddress = Pair.getReservesAddress(token, quoteToken)
       const lpAddress = Pair.parseType(reservesAddress)

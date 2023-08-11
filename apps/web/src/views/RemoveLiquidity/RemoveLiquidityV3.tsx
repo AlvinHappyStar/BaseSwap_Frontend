@@ -498,7 +498,7 @@ function Remove({ tokenId }: { tokenId: bigint }) {
           {isStakedInMCv3 ? (
             <Message variant="primary" mb="20px">
               {t(
-                'This liquidity position is currently staking in the Farm. Adding or removing liquidity will also harvest any unclaimed CAKE to your wallet.',
+                'This liquidity position is currently staking in the Farm. Adding or removing liquidity will also harvest any unclaimed BASE to your wallet.',
               )}
             </Message>
           ) : null}

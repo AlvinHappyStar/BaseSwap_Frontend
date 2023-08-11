@@ -72,7 +72,7 @@ const LeaderBoardList: React.FC<React.PropsWithChildren<LeaderBoardListProps>> =
                     </Td>
                     {/* <Td>
                       <Flex flexDirection="column">
-                        <Text bold>{`~ ${formatNumber(Number(data.cakeBalance), 0)} CAKE`}</Text>
+                        <Text bold>{`~ ${formatNumber(Number(data.cakeBalance), 0)} BASE`}</Text>
                         <Text textAlign="left" fontSize="12px" color="textSubtle">
                           {`$${formatNumber(Number(data.metric.totalEarnFeeUSD), 0)}`}
                         </Text>

@@ -90,12 +90,12 @@ const RewardCalculate = () => {
               color="body"
               bold
             >
-              {t("Join PancakeSwap's Community and Make a Difference")}
+              {t("Join BaseSwap's Community and Make a Difference")}
             </Text>
           </Box>
           <Text textAlign={['left', 'left', 'left', 'center']} color="textSubtle" mb="32px">
             {t(
-              "As an affiliate, you'll be part of a network of like-minded individuals who are committed to build a stronger DeFi community. Be part of something bigger with PancakeSwap's Affiliate program",
+              "As an affiliate, you'll be part of a network of like-minded individuals who are committed to build a stronger DeFi community. Be part of something bigger with BaseSwap's Affiliate program",
             )}
           </Text>
           <Link

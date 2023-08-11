@@ -192,7 +192,7 @@ const AuctionLeaderboardTable: React.FC<
           pr={[null, null, '24px']}
           py="16px"
         >
-          {t('CAKE bid')}
+          {t('BASE bid')}
         </Text>
         <Box />
         {/* Rows */}

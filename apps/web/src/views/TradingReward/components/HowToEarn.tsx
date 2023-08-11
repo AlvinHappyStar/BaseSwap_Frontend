@@ -16,7 +16,7 @@ const stepList = [
     title: <Trans>Start trading</Trans>,
     subTitle: (
       <Trans>
-        Start trading any eligible pairs to earn rewards in CAKE. The more you trade, the more rewards you will earn
+        Start trading any eligible pairs to earn rewards in BASE. The more you trade, the more rewards you will earn
         from the current reward pool.
       </Trans>
     ),

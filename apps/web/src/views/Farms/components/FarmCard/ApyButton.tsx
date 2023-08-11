@@ -144,7 +144,7 @@ const ApyButton: React.FC<React.PropsWithChildren<ApyButtonProps>> = ({
           </Text>
         </Text>
       )}
-      {strikethrough && <Text color="secondary">{t('Boost only applies to base APR (CAKE yield)')}</Text>}
+      {strikethrough && <Text color="secondary">{t('Boost only applies to base APR (BASE yield)')}</Text>}
     </>,
     {
       placement: 'top',

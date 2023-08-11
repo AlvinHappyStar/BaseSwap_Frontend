@@ -40,7 +40,7 @@ const SingleLatestReward: React.FC<React.PropsWithChildren<SingleLatestRewardPro
           {cakeAmountTitle}
         </Text>
         <Text bold fontSize="14px" textAlign="right">
-          {`~ ${formatNumber(cakeAmount)} CAKE`}
+          {`~ ${formatNumber(cakeAmount)} BASE`}
         </Text>
       </Flex>
       <Button onClick={clickClaim} disabled={chainId !== ChainId.BSC || disabled} mt="18px" width="100%">

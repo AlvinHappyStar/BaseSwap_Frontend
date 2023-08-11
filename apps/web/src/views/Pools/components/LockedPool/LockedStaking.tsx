@@ -83,7 +83,7 @@ const LockedStaking: React.FC<React.PropsWithChildren<LockedStakingProps>> = ({ 
       <Flex justifyContent="space-between" mb="16px">
         <Box>
           <Text color="textSubtle" textTransform="uppercase" bold fontSize="12px">
-            {t('CAKE locked')}
+            {t('BASE locked')}
           </Text>
           <Flex>
             <BalanceWithLoading color="text" bold fontSize="16px" value={currentLockedAmount} decimals={5} />

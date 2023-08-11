@@ -90,7 +90,7 @@ const AutoHarvestAction: React.FunctionComponent<React.PropsWithChildren<AutoHar
 
   const actionTitle = (
     <Text fontSize="12px" bold color="secondary" as="span" textTransform="uppercase">
-      {t('Recent CAKE profit')}
+      {t('Recent BASE profit')}
     </Text>
   )
 

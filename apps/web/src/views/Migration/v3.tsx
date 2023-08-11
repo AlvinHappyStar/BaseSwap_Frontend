@@ -118,7 +118,7 @@ const MigrationPage: React.FC<React.PropsWithChildren> = () => {
               {t('Migration')}
             </Heading>
             <Text fontSize={['12px', , '16px']} color="text">
-              {t('Migrate your liquidity to Exchange V3 and keep farming CAKE rewards.')}
+              {t('Migrate your liquidity to Exchange V3 and keep farming BASE rewards.')}
             </Text>
             <AutoColumn gap="4px" pt="4px">
               <Link href="https://docs.pancakeswap.finance/code/v3-migration/how-to-migrate" external>

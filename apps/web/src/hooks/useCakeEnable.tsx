@@ -4,7 +4,7 @@ import { getFullDisplayBalance } from '@pancakeswap/utils/formatBalance'
 import { useAppDispatch } from 'state'
 import { updateUserBalance } from 'state/pools'
 import { ChainId, Native } from '@pancakeswap/sdk'
-import { CAKE } from '@pancakeswap/tokens'
+import { BASE } from '@pancakeswap/tokens'
 import tryParseAmount from '@pancakeswap/utils/tryParseAmount'
 import { useTradeExactOut } from 'hooks/Trades'
 import { useSwapCallback } from 'hooks/useSwapCallback'
@@ -21,7 +21,7 @@ export const useCakeEnable = (enableAmount: BigNumber) => {
   const isTransactionPending = useIsTransactionPending(transactionHash)
   const swapAmount = useMemo(() => getFullDisplayBalance(enableAmount), [enableAmount])
 
-  const parsedAmount = tryParseAmount(swapAmount, CAKE[chainId])
+  const parsedAmount = tryParseAmount(swapAmount, BASE[chainId])
 
   const trade = useTradeExactOut(Native.onChain(ChainId.BSC), parsedAmount)
 

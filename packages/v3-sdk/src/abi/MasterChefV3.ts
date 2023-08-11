@@ -177,7 +177,7 @@ export const masterChefV3ABI = [
   },
   {
     inputs: [],
-    name: 'CAKE',
+    name: 'BASE',
     outputs: [{ internalType: 'contract IERC20', name: '', type: 'address' }],
     stateMutability: 'view',
     type: 'function',

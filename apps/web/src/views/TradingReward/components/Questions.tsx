@@ -97,12 +97,12 @@ const Questions = () => {
             >
               <StyledListText color="textSubtle">
                 {t(
-                  'Each campaign has its own eligibility requirements, like the unlock time of the CAKE staking position.',
+                  'Each campaign has its own eligibility requirements, like the unlock time of the BASE staking position.',
                 )}
               </StyledListText>
               <StyledListText color="textSubtle">
                 {t(
-                  'You may need to extend your locked CAKE staking position. Please follow the instructions on the page.',
+                  'You may need to extend your locked BASE staking position. Please follow the instructions on the page.',
                 )}
               </StyledListText>
             </FoldableText>

@@ -7,10 +7,10 @@ import { FarmV3Data } from './types'
 describe('fetchFarmsV3', () => {
   it('getFarmsPrices', async () => {
     const farmsData: FarmV3Data[] = [
-      // CAKE Pair
+      // BASE Pair
       {
         pid: 1,
-        lpSymbol: 'WBNB-CAKE LP',
+        lpSymbol: 'WBNB-BASE LP',
         lpAddress: Pool.getAddress(bscTokens.wbnb, bscTokens.cake, FeeAmount.MEDIUM),
         token: bscTokens.wbnb,
         quoteToken: bscTokens.cake,
@@ -21,10 +21,10 @@ describe('fetchFarmsV3', () => {
         lmPoolLiquidity: '',
         tokenPriceVsQuote: '2',
       },
-      // CAKE Pair
+      // BASE Pair
       {
         pid: 2,
-        lpSymbol: 'SUSHI-CAKE LP',
+        lpSymbol: 'SUSHI-BASE LP',
         lpAddress: '',
         token: bscTokens.sushi,
         quoteToken: bscTokens.cake,
@@ -91,7 +91,7 @@ describe('fetchFarmsV3', () => {
           "lmPool": "",
           "lmPoolLiquidity": "",
           "lpAddress": "0x133B3D95bAD5405d14d53473671200e9342896BF",
-          "lpSymbol": "WBNB-CAKE LP",
+          "lpSymbol": "WBNB-BASE LP",
           "multiplier": "",
           "pid": 1,
           "poolWeight": "",
@@ -101,9 +101,9 @@ describe('fetchFarmsV3', () => {
             "decimals": 18,
             "isNative": false,
             "isToken": true,
-            "name": "PancakeSwap Token",
+            "name": "BaseSwap Token",
             "projectLink": "https://pancakeswap.finance/",
-            "symbol": "CAKE",
+            "symbol": "BASE",
           },
           "quoteTokenPriceBusd": "40",
           "token": ERC20Token {
@@ -124,7 +124,7 @@ describe('fetchFarmsV3', () => {
           "lmPool": "",
           "lmPoolLiquidity": "",
           "lpAddress": "",
-          "lpSymbol": "SUSHI-CAKE LP",
+          "lpSymbol": "SUSHI-BASE LP",
           "multiplier": "",
           "pid": 2,
           "poolWeight": "",
@@ -134,9 +134,9 @@ describe('fetchFarmsV3', () => {
             "decimals": 18,
             "isNative": false,
             "isToken": true,
-            "name": "PancakeSwap Token",
+            "name": "BaseSwap Token",
             "projectLink": "https://pancakeswap.finance/",
-            "symbol": "CAKE",
+            "symbol": "BASE",
           },
           "quoteTokenPriceBusd": "40",
           "token": ERC20Token {

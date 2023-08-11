@@ -116,7 +116,7 @@ const CurrentPeriod: React.FC<React.PropsWithChildren<CurrentPeriodProps>> = ({
                 >{`$${formatNumber(rewardInUSD)}`}</Text>
                 <Text color={isValid ? 'text' : 'textDisabled'} fontSize="14px">{`~${formatNumber(
                   rewardInCake,
-                )} CAKE`}</Text>
+                )} BASE`}</Text>
               </GreyCard>
 
               <Message mt="24px" variant="success" icon={<LightBulbIcon color="#1FC7D4" width="24px" />}>
