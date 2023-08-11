@@ -116,7 +116,7 @@ const config: (
     },
     {
       label: t('Launchpad'),
-      href: '/farms',
+      href: '/',
       icon: EarnIcon,
       fillIcon: EarnFillIcon,
       image: '/images/decorations/pe2.png',
