@@ -85,7 +85,8 @@ const AddLiquidityPage = () => {
           currencyIdA={currencyIdA}
           currencyIdB={currencyIdB}
           preferredSelectType={!feeAmount ? preferFarmType?.type : undefined}
-          isV2={!feeAmount ? preferFarmType?.type === SELECTOR_TYPE.V2 : undefined}
+          // isV2={!feeAmount ? preferFarmType?.type === SELECTOR_TYPE.V2 : undefined}
+          isV2
           preferredFeeAmount={!feeAmount ? preferFarmType?.feeAmount : undefined}
         />
         <V3SubgraphHealthIndicator />
