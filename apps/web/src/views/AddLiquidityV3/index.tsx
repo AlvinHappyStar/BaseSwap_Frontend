@@ -68,7 +68,7 @@ export const ResponsiveTwoColumns = styled.div`
   }
 `
 
-const selectTypeAtom = atom(SELECTOR_TYPE.V3)
+const selectTypeAtom = atom(SELECTOR_TYPE.V2)
 
 interface UniversalAddLiquidityPropsType {
   currencyIdA: string

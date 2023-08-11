@@ -48,12 +48,12 @@ export function V2Selector({
             </>
           ) : (
             <>
-              <SelectButton
+              {/* <SelectButton
                 isActive={selectorType === SELECTOR_TYPE.V3}
                 onClick={() => handleFeePoolSelect({ type: SELECTOR_TYPE.V3 })}
               >
                 V3 LP
-              </SelectButton>
+              </SelectButton> */}
             </>
           )}
           <SelectButton
