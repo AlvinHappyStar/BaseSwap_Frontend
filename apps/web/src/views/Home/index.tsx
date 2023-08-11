@@ -81,7 +81,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
           }
         `}
       </style>
-      {/* <StyledHeroSection
+      <StyledHeroSection
         innerProps={{ style: { margin: '0', width: '100%' } }}
         containerProps={{
           id: 'home-1',
@@ -94,9 +94,9 @@ const Home: React.FC<React.PropsWithChildren> = () => {
             <UserBanner />
           </UserBannerWrapper>
         )}
-        <MultipleBanner />
+        {/* <MultipleBanner /> */}
         <Hero />
-      </StyledHeroSection> */}
+      </StyledHeroSection>
       <PageSection
         innerProps={{ style: { margin: '0', width: '100%' } }}
         containerProps={{
